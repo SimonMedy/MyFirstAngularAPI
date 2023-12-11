@@ -1,0 +1,10 @@
+<div id="formComponent">
+    <form [formGroup]="dataForm">
+        <div id="inputContainer">
+            <label id="label">Nom du pokemon</label><br />
+            <input id="valueInput" type="text" formControlName="nom">
+        </div>
+        <button id="submitBtn" type="submit" [disabled]="!dataForm.valid"
+            (click)="onSubmit()"><mat-icon>add_circle</mat-icon></button>
+    </form>
+</div>

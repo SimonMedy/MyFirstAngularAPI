@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#label {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#valueInput {
+    margin-top: 5px;
+    height: 25px;
+    border-radius: 5px;
+    border-width: 0;
+    font-weight: bold;
+    color : #fcaf17;
+}
+
+#submitBtn {
+    margin-left : 185px;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    background-color: #fcaf17;
+    color: #080600;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 100%;
+    padding: 10px 10px;
+    border-width: 0;
+    border-color: #fcaf17;
+    cursor: pointer;
+    translate: 0 -45px;
+}

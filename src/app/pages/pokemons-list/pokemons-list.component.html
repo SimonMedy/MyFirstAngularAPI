@@ -1,0 +1,29 @@
+<div id="header">
+    <div id="title"><i id="logo" class="fa-brands fa-angular" style="color: #fcaf17;"></i> My Pokemon API</div>
+    <div id="subtitle">(Made with Angular)</div>
+</div>
+
+
+<div class="wrapper">
+    <app-forms></app-forms>
+    
+    <div id="buttons">
+        <button type="addBtn" id="refreshBtn" (click)="getAllPokemons()">Actualiser</button>
+    </div>
+
+    <div id="table">
+        <table>
+            <caption>Liste des pokemons</caption>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Actions</th>
+            </tr>
+            <tr *ngFor="let pokemon of pokemons">
+                <td data-cell="ID">{{ pokemon.id }}</td>
+                <td data-cell="Nom">{{ pokemon.nom }}</td>
+                <td data-cell="Action"><button id="deleteBtn" type="deleteBtn" (click)="deletePokemon(pokemon.nom)"><mat-icon>delete_forever</mat-icon></button></td>           
+            </tr>
+        </table>
+    </div>
+</div>
